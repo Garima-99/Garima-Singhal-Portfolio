@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garima Singhal | Biomedical AI Researcher</title>
+  <meta name="description" content="Garima Singhal | Biomedical Engineer and AI Researcher. Medical Image Analysis, Clinical Risk Prediction, Multimodal ML for Healthcare." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">GS<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#scicomm">Science Comm.</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-btn" id="themeToggle" title="Toggle theme">
+        <span class="sun">☀</span><span class="moon">◑</span>
+      </button>
+      <a href="#contact" class="nav-cta">Let's Connect</a>
+    </div>
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a><a href="#research">Research</a>
+    <a href="#projects">Projects</a><a href="#publications">Publications</a>
+    <a href="#scicomm">Science Comm.</a>
+    <a href="#awards">Awards</a><a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-bg">
+    <canvas id="neuralCanvas"></canvas>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="hero-container">
+    <div class="hero-left">
+      <div class="hero-badge" data-reveal>
+        <span class="live-dot"></span>
+        Open to PhD &amp; Research Collaborations
+      </div>
+
+      <h1 class="hero-title" data-reveal>
+        <span class="line-1">Garima</span>
+        <span class="line-2">Singhal</span>
+        <span class="line-3">
+          <span class="typewriter" id="typewriter"></span>
+          <span class="cursor">|</span>
+        </span>
+      </h1>
+
+      <p class="hero-tagline" data-reveal>
+        Building AI that works at the intersection of data and clinical practice, translating medical images, electronic health records, and multi-modal signals into tools that help clinicians act earlier, decide better, and do more for patients.
+      </p>
+
+      <div class="hero-pills" data-reveal>
+        <span class="pill">Medical Image Analysis</span>
+        <span class="pill">AI Risk Prediction</span>
+        <span class="pill">Multimodal ML</span>
+        <span class="pill">Science Communication</span>
+      </div>
+
+      <div class="hero-actions" data-reveal>
+        <a href="#research" class="btn-primary">View Research ↓</a>
+        <a href="#publications" class="btn-secondary">Publications</a>
+        <a href="Garima_Singhal_Resume.pdf" download class="btn-cv">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right" data-reveal>
+      <div class="photo-wrap">
+        <div class="photo-ring r1"></div>
+        <div class="photo-ring r2"></div>
+        <div class="photo-ring r3"></div>
+        <div class="photo-circle">
+          <img src="IMG_5680.JPG" alt="Garima Singhal" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-down">
+    <span class="sd-text">scroll</span>
+    <span class="sd-line"></span>
+  </a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-eyebrow" data-reveal>About Me</div>
+    <h2 class="section-heading" data-reveal>Where I've Been,<br><em>What I've Built</em></h2>
+
+    <div class="about-intro-block" data-reveal>
+      <p class="about-bio">
+        I am a biomedical engineer with an M.Tech from the National Institute of Technology Rourkela, working at the intersection of machine learning and clinical medicine. My research focuses on building AI systems that are not just statistically robust, but genuinely useful at the point of care: whether that means predicting acute kidney injury before it manifests, estimating portal hypertension without an invasive catheter, or enabling pathologists to analyse collagen structure in tumour tissue without expensive microscopy.
+      </p>
+      <p class="about-bio">
+        My background spans liver disease, oncological imaging, biosignal analysis, and multimodal data fusion. I work with volumetric CT scans, whole-slide histopathology images, EHR-derived clinical tables, and spectroscopic signals, and with the clinicians, radiologists and hepatologists who use them. I have published across peer-reviewed journals and international conferences, received a Best Paper Award, and hold a Gold Medal for academic achievement.
+      </p>
+    </div>
+
+    <!-- EDUCATION CARDS -->
+    <div class="edu-cards-row">
+
+      <div class="edu-card" data-reveal>
+        <a href="https://www.nitrkl.ac.in/" target="_blank" rel="noopener" class="edu-card-img-link">
+          <img src="edu_nit.png" alt="NIT Rourkela campus" class="edu-card-img" />
+          <div class="edu-card-img-overlay">Visit Website ↗</div>
+        </a>
+        <div class="edu-card-body">
+          <div class="edu-card-badge current-badge">M.Tech · 2022–2024</div>
+          <h3 class="edu-card-degree">Biomedical Engineering</h3>
+          <a href="https://www.nitrkl.ac.in/" target="_blank" rel="noopener" class="edu-card-inst">
+            National Institute of Technology Rourkela, Odisha
+          </a>
+          <div class="edu-card-tags">
+            <span class="etag gold">CGPA 9.16 / 10</span>
+            <span class="etag blue">Merit Scholar</span>
+          </div>
+          <div class="edu-thesis-block">
+            <div class="edu-thesis-label">Thesis</div>
+            <p class="edu-thesis-text"><em>"Optimizing CNN Models for Multiclass Skin Cancer Classification: A Transfer Learning Approach"</em></p>
+            <a href="https://bsiplab.in/" target="_blank" rel="noopener" class="edu-lab-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+              BioMedical Signal &amp; Image Processing Lab
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-card" data-reveal>
+        <a href="http://www.banasthali.org/banasthali/wcms/en/home/" target="_blank" rel="noopener" class="edu-card-img-link">
+          <img src="edu_banasthali.png" alt="Banasthali Vidyapith campus" class="edu-card-img" />
+          <div class="edu-card-img-overlay">Visit Website ↗</div>
+        </a>
+        <div class="edu-card-body">
+          <div class="edu-card-badge">B.Tech · 2018–2022</div>
+          <h3 class="edu-card-degree">Biotechnology</h3>
+          <a href="http://www.banasthali.org/banasthali/wcms/en/home/" target="_blank" rel="noopener" class="edu-card-inst">
+            Banasthali Vidyapith, Rajasthan
+          </a>
+          <div class="edu-card-tags">
+            <span class="etag gold">CGPA 8.46 / 10</span>
+            <span class="etag warm">🥇 Gold Medalist</span>
+          </div>
+          <div class="edu-thesis-block">
+            <div class="edu-thesis-label">Thesis · IIT Delhi</div>
+            <p class="edu-thesis-text"><em>"In-host Modeling of SARS-CoV-2 Infections and Metabolic Implications in Disease Severity"</em></p>
+            <a href="https://www.linkedin.com/in/madhureshsumit/" target="_blank" rel="noopener" class="edu-lab-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              Dr. Madhuresh Sumit, IIT Delhi
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SKILLS (below education) -->
+    <div class="skills-below-edu" data-reveal>
+      <h3 class="col-title" style="margin-bottom:24px">Technical Skills</h3>
+      <div class="skill-blocks">
+        <div class="skb">
+          <div class="skb-label">Programming &amp; Data Science</div>
+          <div class="skb-tags">
+            <span>Python</span><span>pandas</span><span>NumPy</span><span>scikit-learn</span><span>MATLAB</span>
+          </div>
+        </div>
+        <div class="skb">
+          <div class="skb-label">Machine Learning &amp; AI</div>
+          <div class="skb-tags">
+            <span>CNNs</span><span>Transfer Learning</span><span>Multimodal Fusion</span><span>Feature Engineering</span><span>ROC / AUC</span>
+          </div>
+        </div>
+        <div class="skb">
+          <div class="skb-label">Medical Imaging</div>
+          <div class="skb-tags">
+            <span>3D Radiomics</span><span>DICOM</span><span>3D Slicer</span><span>ITK-SNAP</span><span>Segmentation</span><span>WSI</span>
+          </div>
+        </div>
+        <div class="skb">
+          <div class="skb-label">Deep Learning Architectures</div>
+          <div class="skb-tags">
+            <span>Encoder-Decoder Networks</span><span>Cross-modality Translation</span><span>Feature Extraction</span>
+          </div>
+        </div>
+        <div class="skb">
+          <div class="skb-label">Research &amp; Collaboration</div>
+          <div class="skb-tags">
+            <span>EHR Data Analysis</span><span>Statistical Analysis</span><span>Scientific Writing</span><span>Clinical Translational Research</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH INTERESTS -->
+<section id="research" class="section section-alt">
+  <div class="container">
+    <div class="section-eyebrow" data-reveal>Research Focus</div>
+    <h2 class="section-heading" data-reveal>Three Questions<br><em>That Drive My Work</em></h2>
+    <div class="ri-grid">
+
+      <div class="ri-card" data-reveal tabindex="0">
+        <div class="ri-num">01</div>
+        <div class="ri-icon-wrap blue">
+          <svg viewBox="0 0 64 64" fill="none" width="40" height="40"><circle cx="32" cy="32" r="22" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="10" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="3" fill="currentColor"/><line x1="32" y1="10" x2="32" y2="4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="32" y1="60" x2="32" y2="54" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="10" y1="32" x2="4" y2="32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="60" y1="32" x2="54" y2="32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Medical Image Analysis</h3>
+        <p class="ri-question"><em>Can a model trained on thousands of scans generalise reliably enough to augment, or replace, a specialist's first read?</em></p>
+        <div class="ri-body">
+          <p>Deep learning frameworks for analyzing medical images across modalities: CT, histopathology whole-slide images, and cross-modal translations between staining types. Work spans skin cancer classification, pancreatic tumour assessment, and collagen morphology quantification in chronic disease.</p>
+          <div class="ri-tags"><span>CNNs</span><span>Radiomics</span><span>Transfer Learning</span><span>Histopathology</span><span>Cross-modal Translation</span></div>
+        </div>
+        <button class="ri-toggle">Read more <span>↓</span></button>
+      </div>
+
+      <div class="ri-card" data-reveal tabindex="0">
+        <div class="ri-num">02</div>
+        <div class="ri-icon-wrap warm">
+          <svg viewBox="0 0 64 64" fill="none" width="40" height="40"><rect x="8" y="10" width="48" height="44" rx="5" stroke="currentColor" stroke-width="2"/><path d="M16 42 L26 28 L34 35 L44 18 L52 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="44" cy="18" r="4" fill="currentColor" opacity="0.7"/></svg>
+        </div>
+        <h3>AI-based Clinical Risk Prediction</h3>
+        <p class="ri-question"><em>What signal already exists in routine clinical data that, if surfaced earlier, could change a patient's outcome?</em></p>
+        <div class="ri-body">
+          <p>Building interpretable ML models from routinely collected EHR data to forecast critical clinical events. Focus on acute kidney injury in liver failure, where early warning is the difference between intervention and irreversible organ damage. Emphasis on feature interpretability alongside predictive performance.</p>
+          <div class="ri-tags"><span>EHR Analysis</span><span>Risk Stratification</span><span>Decision Trees</span><span>Feature Importance</span></div>
+        </div>
+        <button class="ri-toggle">Read more <span>↓</span></button>
+      </div>
+
+      <div class="ri-card" data-reveal tabindex="0">
+        <div class="ri-num">03</div>
+        <div class="ri-icon-wrap teal">
+          <svg viewBox="0 0 64 64" fill="none" width="40" height="40"><rect x="6" y="6" width="22" height="22" rx="4" stroke="currentColor" stroke-width="2"/><rect x="36" y="6" width="22" height="22" rx="4" stroke="currentColor" stroke-width="2"/><rect x="6" y="36" width="22" height="22" rx="4" stroke="currentColor" stroke-width="2"/><rect x="36" y="36" width="22" height="22" rx="4" stroke="currentColor" stroke-width="2"/><path d="M28 17 L36 17 M28 47 L36 47 M17 28 L17 36 M47 28 L47 36" stroke="currentColor" stroke-width="2" opacity="0.5"/><circle cx="32" cy="32" r="5" fill="currentColor" opacity="0.8"/></svg>
+        </div>
+        <h3>Multimodal ML for Healthcare</h3>
+        <p class="ri-question"><em>How do we design models that can reason across imaging, laboratory values, and clinical history, the way a clinician does?</em></p>
+        <div class="ri-body">
+          <p>Designing fusion architectures that integrate CT-derived radiomic features with structured clinical parameters. Current work targets non-invasive estimation of portal hypertension in chronic liver disease, aiming to replace an invasive hepatic venous pressure gradient measurement with a machine learning surrogate.</p>
+          <div class="ri-tags"><span>Data Fusion</span><span>Radiomics + EHR</span><span>Portal Hypertension</span><span>Multimodal Deep Learning</span></div>
+        </div>
+        <button class="ri-toggle">Read more <span>↓</span></button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-eyebrow" data-reveal>Portfolio</div>
+    <h2 class="section-heading" data-reveal>Research Projects</h2>
+
+    <div class="filter-row" data-reveal>
+      <button class="fb active" data-f="all">All</button>
+      <button class="fb" data-f="imaging">Medical Imaging</button>
+      <button class="fb" data-f="prediction">Risk Prediction</button>
+      <button class="fb" data-f="multimodal">Multimodal</button>
+      <button class="fb" data-f="signal">Signal Processing</button>
+    </div>
+
+    <div class="proj-grid" id="projGrid">
+
+      <div class="pcard" data-cat="multimodal prediction" data-reveal>
+        <div class="pcard-top" style="background:linear-gradient(135deg,#e8f4fd,#d4e8f5)">
+          <span class="pcard-emoji">🫁</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-inst">Institute of Liver and Biliary Sciences · Feb 2025 – Present</div>
+          <h3>Multimodal Deep Learning for Portal Hypertension</h3>
+          <p>Non-invasive estimation of portal hypertension by fusing CT radiomic features with laboratory parameters to replace invasive HVPG measurement.</p>
+          <div class="pcard-tech"><span>3D Radiomics</span><span>Multimodal Fusion</span><span>CT Imaging</span></div>
+        </div>
+        <button class="pcard-btn" data-key="portal">View Details →</button>
+      </div>
+
+      <div class="pcard" data-cat="prediction" data-reveal>
+        <div class="pcard-top" style="background:linear-gradient(135deg,#fdf0f0,#f9d6d6)">
+          <span class="pcard-emoji">🩺</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-inst">Institute of Liver and Biliary Sciences · 2024–2025</div>
+          <h3>AKI Risk Prediction in ACLF Patients</h3>
+          <p>ML model predicting 7-day acute kidney injury risk in liver failure patients from routine EHR data. Demonstrated strong clinical relevance for early intervention.</p>
+          <div class="pcard-tech"><span>EHR Analysis</span><span>Risk Stratification</span><span>scikit-learn</span></div>
+        </div>
+        <button class="pcard-btn" data-key="aki">View Details →</button>
+      </div>
+
+      <div class="pcard" data-cat="imaging" data-reveal>
+        <div class="pcard-top" style="background:linear-gradient(135deg,#eef7f2,#cceedd)">
+          <span class="pcard-emoji">🔬</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-inst">IIT Ropar · Jul–Dec 2024</div>
+          <h3>Cross-Modality Image Translation for Pancreatic Tumor</h3>
+          <p>Deep learning framework translating H&amp;E slides to SHG-equivalent images for non-invasive collagen morphology analysis in pancreatic tumour assessment.</p>
+          <div class="pcard-tech"><span>Image-to-Image Translation</span><span>Histopathology</span><span>CNN</span></div>
+        </div>
+        <button class="pcard-btn" data-key="pancreatic">View Details →</button>
+      </div>
+
+      <div class="pcard" data-cat="multimodal" data-reveal>
+        <div class="pcard-top" style="background:linear-gradient(135deg,#f0faf0,#d4f0d4)">
+          <span class="pcard-emoji">🌿</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-inst">IIT Ropar · Jul–Dec 2024</div>
+          <h3>Early Detection of Citrus Greening Disease</h3>
+          <p>ML-based fusion of near-infrared and fluorescence spectra for non-invasive HLB detection. Combined spectral analysis with vegetation indices.</p>
+          <div class="pcard-tech"><span>NIR Spectroscopy</span><span>Data Fusion</span><span>Classification</span></div>
+        </div>
+        <button class="pcard-btn" data-key="citrus">View Details →</button>
+      </div>
+
+      <div class="pcard" data-cat="imaging" data-reveal>
+        <div class="pcard-top" style="background:linear-gradient(135deg,#fef5e7,#fde8c4)">
+          <span class="pcard-emoji">🧬</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-inst">National Institute of Technology Rourkela · Oct 2023–May 2024</div>
+          <h3>CNN-Based Multiclass Skin Cancer Classification</h3>
+          <p>M.Tech thesis. Optimized CNN with transfer learning on 25,000+ whole-slide images. Achieved accuracy comparable to state-of-the-art with reduced compute.</p>
+          <div class="pcard-tech"><span>Transfer Learning</span><span>MATLAB</span><span>WSI</span><span>Data Augmentation</span></div>
+        </div>
+        <button class="pcard-btn" data-key="skin">View Details →</button>
+      </div>
+
+      <div class="pcard" data-cat="signal" data-reveal>
+        <div class="pcard-top" style="background:linear-gradient(135deg,#f3eeff,#e0d4fa)">
+          <span class="pcard-emoji">⚡</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-inst">National Institute of Technology Rourkela · May–Sept 2023</div>
+          <h3>VEP Analysis Post-Caffeine Consumption</h3>
+          <p>ML analysis of visual evoked potential signals detecting changes in the visual pathway following coffee consumption across six ML classifiers.</p>
+          <div class="pcard-tech"><span>EEG / VEP</span><span>Random Forest</span><span>Signal Processing</span></div>
+        </div>
+        <button class="pcard-btn" data-key="vep">View Details →</button>
+      </div>
+
+      <div class="pcard" data-cat="imaging" data-reveal>
+        <div class="pcard-top" style="background:linear-gradient(135deg,#e8f5fe,#c9e8fb)">
+          <span class="pcard-emoji">🫧</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-inst">National Institute of Technology Rourkela · May–Sept 2023</div>
+          <h3>AI for 2D-to-3D Airway Volume Estimation</h3>
+          <p>Systematic review comparing 2D modalities vs 3D cone-beam CT for upper airway volume. Identified a research gap for AI-driven estimation approaches.</p>
+          <div class="pcard-tech"><span>Systematic Review</span><span>CBCT</span><span>Airway Analysis</span></div>
+        </div>
+        <button class="pcard-btn" data-key="airway">View Details →</button>
+      </div>
+
+      <div class="pcard" data-cat="imaging" data-reveal>
+        <div class="pcard-top" style="background:linear-gradient(135deg,#f5eef8,#e8d5f0)">
+          <span class="pcard-emoji">🫀</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-inst">National Institute of Technology Rourkela / IIT Ropar · 2023–2024</div>
+          <h3>Stromal Collagen Analysis in Chronic Pancreatitis</h3>
+          <p>First-order intensity analysis of stromal collagen in chronic pancreatitis using cross-modality image translation with CNNs. Published in Procedia Computer Science.</p>
+          <div class="pcard-tech"><span>Cross-Modality CNN</span><span>Texture Analysis</span><span>Histopathology</span></div>
+        </div>
+        <button class="pcard-btn" data-key="collagen">View Details →</button>
+      </div>
+
+      <div class="pcard" data-cat="prediction" data-reveal>
+        <div class="pcard-top" style="background:linear-gradient(135deg,#fff8e8,#fde8b4)">
+          <span class="pcard-emoji">🦠</span>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-inst">IIT Delhi · Jun–Dec 2021</div>
+          <h3>In-Host Modeling of SARS-CoV-2 Infections</h3>
+          <p>Mathematical models of viral dynamics and immune responses in SARS-CoV-2 and influenza. Identified potential antiviral targets and gene therapy candidates.</p>
+          <div class="pcard-tech"><span>Mathematical Modeling</span><span>ODE Systems</span><span>MATLAB</span></div>
+        </div>
+        <button class="pcard-btn" data-key="sars">View Details →</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="section section-alt">
+  <div class="container">
+    <div class="section-eyebrow" data-reveal>Scholarly Output</div>
+    <h2 class="section-heading" data-reveal>Publications &amp;<br><em>Conferences</em></h2>
+
+    <div class="pub-list">
+
+      <!-- PUB 1 -->
+      <div class="pub-item" data-reveal>
+        <div class="pub-thumb" data-img="pub_aki.jpg" data-title="AKI in ACLF: Conference Poster" title="Click to view full poster">
+          <img src="pub_aki.jpg" alt="AKI in ACLF conference poster" />
+          <div class="pub-thumb-overlay">
+            <span class="thumb-view-label">Click to view</span>
+          </div>
+        </div>
+        <div class="pub-content">
+          <div class="pub-top-row">
+            <span class="pub-badge journal">Journal · 2025</span>
+          </div>
+          <h4>A simple machine learning model considering Serum bilirubin, PT-INR and age can accurately predict the risk of renal failure in patients of ACLF</h4>
+          <p class="pub-authors"><strong>Singhal G</strong>, Choudhury A, Arora V, Kumar G, Sarin SK.</p>
+          <p class="pub-venue">Journal of Clinical and Experimental Hepatology, 2025;15:102726</p>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1016/j.jceh.2025.102726" target="_blank" rel="noopener" class="doi-link">DOI ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PUB 2 -->
+      <div class="pub-item" data-reveal>
+        <div class="pub-thumb" data-img="pub_pancreatic.jpg" data-title="Pancreatic Tumor: Methodology Figure" title="Click to view figure">
+          <img src="pub_pancreatic.jpg" alt="Pancreatic tumor cross-modality translation figure" />
+          <div class="pub-thumb-overlay">
+            <span class="thumb-view-label">Click to view</span>
+          </div>
+        </div>
+        <div class="pub-content">
+          <div class="pub-top-row">
+            <span class="pub-badge conference">Conference · 2026</span>
+            <span class="pub-chip award">🏆 Best Paper Award</span>
+          </div>
+          <h4>Assessment of collagen morphology in pancreatic tumor using computational translation of histological images</h4>
+          <p class="pub-authors"><strong>Singhal G</strong>, Nisha, Uppal G, Kaur M, Sinha R, Kumar R.</p>
+          <p class="pub-venue">Lecture Notes in Networks and Systems, 2026:297–311</p>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1007/978-981-95-0701-6_22" target="_blank" rel="noopener" class="doi-link">DOI ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PUB 3 -->
+      <div class="pub-item" data-reveal>
+        <div class="pub-thumb" data-img="pub_nisha.jpg" data-title="Collagen in Chronic Pancreatitis: Architecture Figure" title="Click to view figure">
+          <img src="pub_nisha.jpg" alt="Stromal collagen cross-modality CNN figure" />
+          <div class="pub-thumb-overlay">
+            <span class="thumb-view-label">Click to view</span>
+          </div>
+        </div>
+        <div class="pub-content">
+          <div class="pub-top-row">
+            <span class="pub-badge journal">Journal · 2025</span>
+          </div>
+          <h4>First-order Analysis of Stromal Collagen in Chronic Pancreatitis using Cross-Modality Image Translation with Convolutional Neural Networks</h4>
+          <p class="pub-authors">Nisha, <strong>Singhal G</strong>, Uppal G, Kumar R.</p>
+          <p class="pub-venue">Procedia Computer Science, 2025;258:365–373</p>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1016/j.procs.2025.04.273" target="_blank" rel="noopener" class="doi-link">DOI ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PUB 4 -->
+      <div class="pub-item" data-reveal>
+        <div class="pub-thumb" data-img="pub_vep.jpg" data-title="VEP Coffee Study: Publication Figure" title="Click to view figure">
+          <img src="pub_vep.jpg" alt="VEP coffee consumption study figure" />
+          <div class="pub-thumb-overlay">
+            <span class="thumb-view-label">Click to view</span>
+          </div>
+        </div>
+        <div class="pub-content">
+          <div class="pub-top-row">
+            <span class="pub-badge conference">Conference · 2025</span>
+          </div>
+          <h4>Analyzing the effect of coffee consumption on visual pathway using visual Evoked Potential (VEP) signals and machine learning algorithms</h4>
+          <p class="pub-authors"><strong>Singhal G</strong>, Rao NM, Amit CS, et al.</p>
+          <p class="pub-venue">Communications in Computer and Information Science, 2025:267–277</p>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1007/978-3-031-81342-9_22" target="_blank" rel="noopener" class="doi-link">DOI ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PUB 5 -->
+      <div class="pub-item" data-reveal>
+        <div class="pub-thumb" data-img="pub_hlb.jpg" data-title="Citrus Greening Disease: Methodology Figure" title="Click to view figure">
+          <img src="pub_hlb.jpg" alt="Citrus greening disease detection figure" />
+          <div class="pub-thumb-overlay">
+            <span class="thumb-view-label">Click to view</span>
+          </div>
+        </div>
+        <div class="pub-content">
+          <div class="pub-top-row">
+            <span class="pub-badge preprint">In Prep. · 2024</span>
+          </div>
+          <h4>Early Detection of Citrus Greening Disease via Fusion of Visible and Near-Infrared Spectra with Machine Learning Approaches</h4>
+          <p class="pub-authors"><strong>Singhal G</strong>, Kumar R.</p>
+          <p class="pub-venue">Manuscript in preparation</p>
+          <div class="pub-actions">
+            <span class="pub-chip">In Progress</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SCIENCE COMMUNICATION -->
+<section id="scicomm" class="section">
+  <div class="container">
+    <div class="section-eyebrow" data-reveal>Beyond the Lab</div>
+    <h2 class="section-heading" data-reveal>Science<br><em>Communication</em></h2>
+
+    <div class="scicomm-intro" data-reveal>
+      <p>Research findings only reach their full impact when they travel beyond academic journals. I have contributed to translating complex biomedical and health science concepts into accessible, engaging content: infographics, written articles, and audio-visual media, reaching a wider public audience through BioXspace-Synergising Stem, an e-learning platform focused on science communication.</p>
+    </div>
+
+    <div class="scicomm-grid">
+
+      <div class="scicomm-role-card" data-reveal>
+        <div class="scr-icon">📢</div>
+        <div class="scr-body">
+          <span class="scr-period">July 2022 – November 2022</span>
+          <h3>Volunteer, Science Communication</h3>
+          <p class="scr-org">BioXspace-Synergising Stem (E-learning Platform)</p>
+          <p>Managed social media outreach and developed educational content to engage a wider audience in science. Created infographics and articles that made research accessible beyond specialist communities.</p>
+        </div>
+      </div>
+
+      <div class="scicomm-role-card" data-reveal>
+        <div class="scr-icon">✍️</div>
+        <div class="scr-body">
+          <span class="scr-period">June 2022 – July 2022</span>
+          <h3>Science Communication Intern</h3>
+          <p class="scr-org">BioXspace-Synergising Stem (E-learning Platform)</p>
+          <p>Gained hands-on experience translating complex scientific concepts into accessible formats. Produced infographics, long-form articles, and audio-visual materials for diverse audiences.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <h3 class="scicomm-samples-heading" data-reveal>Sample Work</h3>
+    <p class="scicomm-samples-note" data-reveal>Featured science communication pieces created during my time at BioXspace.</p>
+
+    <div class="scicomm-samples-grid">
+
+      <div class="scicomm-card" data-reveal>
+        <div class="scicomm-card-img" style="cursor:pointer" onclick="openScicommModal('scicomm_monkeypox.jpg','Monkeypox Infographic')">
+          <img src="scicomm_monkeypox.jpg" alt="Monkeypox science infographic" />
+          <div class="scicomm-hover-overlay"><span>Click to View ↗</span></div>
+        </div>
+        <div class="scicomm-card-body">
+          <span class="scicomm-tag">Infographic</span>
+          <h4>Science Infographic</h4>
+          <p>BioXspace · 2022. Visual explainer communicating a biomedical concept for a general audience.</p>
+          <a href="https://www.instagram.com/p/CkVoX2YvHcH/" target="_blank" rel="noopener" class="scicomm-ig-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            View on Instagram
+          </a>
+        </div>
+      </div>
+
+      <div class="scicomm-card" data-reveal>
+        <div class="scicomm-card-img" style="cursor:pointer" onclick="openScicommModal('scicomm_article.jpg','Viral Diseases Article')">
+          <img src="scicomm_article.jpg" alt="Viral diseases science article" />
+          <div class="scicomm-hover-overlay"><span>Click to View ↗</span></div>
+        </div>
+        <div class="scicomm-card-body">
+          <span class="scicomm-tag">Article</span>
+          <h4>Science Article</h4>
+          <p>BioXspace · 2022. Long-form article breaking down a scientific topic for a non-specialist readership.</p>
+          <a href="https://www.instagram.com/p/ChfEnPcvRaV/" target="_blank" rel="noopener" class="scicomm-ig-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            View on Instagram
+          </a>
+        </div>
+      </div>
+
+      <div class="scicomm-card" data-reveal>
+        <div class="scicomm-card-img" style="cursor:pointer" onclick="openScicommModal('scicomm_synbio.jpg','Synthetic Biology Infographic')">
+          <img src="scicomm_synbio.jpg" alt="Synthetic biology infographic" />
+          <div class="scicomm-hover-overlay"><span>Click to View ↗</span></div>
+        </div>
+        <div class="scicomm-card-body">
+          <span class="scicomm-tag">Infographic</span>
+          <h4>Science Infographic</h4>
+          <p>BioXspace · 2022. Visual explainer on the applications of synthetic biology for a general audience.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scicomm image modal -->
+    <div id="scicommModalBg" class="scicomm-modal-bg" onclick="if(event.target===this)closeScicommModal()">
+      <div class="scicomm-modal">
+        <div class="scicomm-modal-header">
+          <span id="scicommModalTitle"></span>
+          <button onclick="closeScicommModal()" class="scicomm-modal-x">✕</button>
+        </div>
+        <div class="scicomm-modal-body">
+          <img id="scicommModalImg" src="" alt="Science communication work" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards" class="section section-alt">
+  <div class="container">
+    <div class="section-eyebrow" data-reveal>Recognition</div>
+    <h2 class="section-heading" data-reveal>Awards &amp;<br><em>Certifications</em></h2>
+
+    <div class="awards-row">
+      <div class="award-card featured" data-reveal>
+        <div class="aw-glow"></div>
+        <div class="aw-icon">🏆</div>
+        <span class="aw-year">2024</span>
+        <h3>Best Paper Award</h3>
+        <p>2nd International Conference on AI, Computing Technologies, IoT &amp; Data Analytics<br>National Institute of Technology Raipur, November 2024</p>
+      </div>
+      <div class="award-card" data-reveal>
+        <div class="aw-icon">🥇</div>
+        <span class="aw-year">2018–2022</span>
+        <h3>Gold Medalist</h3>
+        <p>B.Tech Biotechnology<br>Highest CGPA in entire graduating batch, Banasthali Vidyapith</p>
+      </div>
+      <div class="award-card" data-reveal>
+        <div class="aw-icon">🎓</div>
+        <span class="aw-year">2022</span>
+        <h3>Merit Scholarship</h3>
+        <p>M.Tech at National Institute of Technology Rourkela<br>Awarded based on rank in the national GATE examination</p>
+      </div>
+      <div class="award-card" data-reveal>
+        <div class="aw-icon">📊</div>
+        <span class="aw-year">2022</span>
+        <h3>GATE AIR 573</h3>
+        <p>All India Rank 573 in Graduate Aptitude Test in Engineering, Biotechnology stream</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+  <div class="contact-bg">
+    <div class="c-orb c-orb-1"></div>
+    <div class="c-orb c-orb-2"></div>
+  </div>
+  <div class="container">
+    <div class="section-eyebrow light" data-reveal>Let's Connect</div>
+    <h2 class="section-heading light" data-reveal>Have a research idea?<br><em>Let's explore it together.</em></h2>
+    <div class="contact-grid">
+      <div class="contact-left" data-reveal>
+        <p class="contact-intro">I am open to research collaborations and conversations about AI in healthcare. Don't hesitate to reach out.</p>
+        <div class="contact-links">
+          <a href="/cdn-cgi/l/email-protection#a1c6c0d3c8ccc09898cfc8d5d3cacde1c6ccc0c8cd8fc2cecc" class="clink">
+            <div class="clink-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            </div>
+            <div><div class="clink-label">Email</div><div class="clink-val">garima99nitrkl@gmail.com</div></div>
+          </a>
+          <a href="https://www.linkedin.com/in/garima-singhal-423b611b0" target="_blank" rel="noopener" class="clink">
+            <div class="clink-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div><div class="clink-label">LinkedIn</div><div class="clink-val">Garima Singhal</div></div>
+          </a>
+          <div class="clink no-hover">
+            <div class="clink-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div><div class="clink-label">Location</div><div class="clink-val">New Delhi, India</div></div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/mwvnaeop" method="POST" novalidate data-reveal>
+        <div class="form-row-2">
+          <div class="fg">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your full name" required />
+            <span class="field-error">Please enter your name.</span>
+          </div>
+          <div class="fg">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="your@email.com" required />
+            <span class="field-error">Please enter a valid email address.</span>
+          </div>
+        </div>
+        <div class="fg">
+          <label>Subject</label>
+          <input type="text" name="subject" placeholder="Research collaboration / PhD inquiry / Other" />
+        </div>
+        <div class="fg">
+          <label>Message</label>
+          <textarea name="message" rows="5" placeholder="Tell me about your research, project, or opportunity..." required></textarea>
+          <span class="field-error">Please enter a message.</span>
+        </div>
+        <!-- Honeypot anti-spam field — hidden from real users -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+        <input type="hidden" name="_subject" value="New message from portfolio" />
+        <button type="submit" class="btn-send" id="sendBtn">Send Message ↗</button>
+        <p class="form-note" id="formNote">Your message goes directly to Garima's inbox.</p>
+        <div class="form-success" id="formSuccess">
+          <span>✓</span> Message sent! Garima will get back to you soon.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">GS<span>.</span></span>
+        <p>Biomedical Engineer · AI Researcher<br>New Delhi, India</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#about">About</a><a href="#research">Research</a>
+        <a href="#projects">Projects</a><a href="#publications">Publications</a>
+        <a href="#scicomm">Science Comm.</a><a href="#awards">Awards</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-social">
+        <a href="mailto:garima99nitrkl@gmail.com" title="Email">✉</a>
+        <a href="https://www.linkedin.com/in/garima-singhal-423b611b0" target="_blank" rel="noopener" title="LinkedIn">in</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Garima Singhal · Built with care for science and humanity</p>
+    </div>
+  </div>
+</footer>
+
+<!-- PROJECT MODAL -->
+<div class="modal-bg" id="modalBg">
+  <div class="modal-box" id="modalBox">
+    <button class="modal-x" id="modalX">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- PDF MODAL -->
+<div class="pdf-modal-bg" id="pdfModalBg">
+  <div class="pdf-modal-box">
+    <div class="pdf-modal-header">
+      <span id="pdfModalTitle"></span>
+      <button class="modal-x" id="pdfModalX">✕</button>
+      </div>
+    <div class="pdf-modal-bod
